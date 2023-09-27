@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(56, 5, 33);
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: rgb(233, 159, 171);
+}
+
+a{
+    text-decoration: none;
+    color: #690844;
+}
+
+.cabecalho-imagem{
+    height: 130px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap:32px;
+    
+}
+
+.cabecalho-menu-item{
+    font-family: sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+ 
+.cabecalho-imagem-two{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: rgb(212, 54, 141);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main{
+    display:block;
+    background-color:pink;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background-color: rgb(233, 159, 171);
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*garante o efeito parallax*/
+    background-size: cover;
+    -webkit-background-size:cover; /*para funcionar em outros navegadores*/
+    -moz-background-size: cover; /*firefox*/
+    -o-background-size: cover;
+
+
+}
+
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index:8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0)40%,#000 100%);
+    
+}
+
+section.module.parallax-1{
+    background-image: url("../imagem/Interior_confeitaria.jpeg");
+    opacity: 0.6;
+}
+
+section.module.parallax-2{
+    background-image: url("../imagem/bancada_confeitaria.jpeg");
+}
+
+section.module.parallax-3{
+    background-image: url("../imagem/ambiente_confeitaria.jpeg");
+}
+
+section.module.parallax span{
+    color: rgb(212, 54, 141);
+    text-align: center;
+    font-size: 50px;
+    z-index: 5O;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    left: 50px;
+    width: 100%;
+    padding: 18px;
+    letter-spacing: 9px;
+    background-color:  rgb(233, 159, 171);
+    border: solid 2px;
+    border-radius: 9px;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+
+
+
+
+
+
+ul{
+    display: inline-block;                /* contato*/
+    vertical-align: top;
+    width: 20%;
+    margin-left: 15%;
+
+}
+
+.cabecalho-imagem-cont{
+    width: 50%;
+}
+
+.Contato{
+    background-color:  rgb(233, 159, 171);
+    border: solid 2px;
+    border-radius: 9px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+ /*Sobre*/
+ .slides  {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #f190e4 1%, #e74fad 99%);
+
+}
+
+.conteudosobre{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Sobre{
+    background: linear-gradient(72deg, #f190e4 1%, #e74fad 99%);
+
+}
+
+.navigation{
+    position:absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #ffff;
+    margin:6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: #ffff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1{
+    margin-left: -80%;
+}
+
+#slide6:checked~.s1{
+    margin-left: -100%;
+}
+
